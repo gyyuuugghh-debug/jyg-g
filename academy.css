@@ -1,0 +1,38 @@
+/* Alpha LogicX Academy — uses logical properties so RTL/LTR both work. */
+#ac-open{position:fixed;inset-block-end:18px;inset-inline-start:18px;z-index:40;font:700 14px var(--font-main,Cairo,sans-serif);color:#fff;border:0;border-radius:99px;padding:12px 20px;cursor:pointer;background:linear-gradient(135deg,#7c3aed,#22d3ee);box-shadow:0 6px 24px rgba(124,58,237,.5)}
+#ac-root{position:fixed;inset:0;z-index:100;display:none;flex-direction:column;background:#06061a;color:#f2f2ff;font-family:var(--font-main,Cairo,sans-serif);overflow:hidden}
+#ac-root.on{display:flex}
+.ac-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 14px;border-block-end:1px solid rgba(140,120,255,.25);background:rgba(18,16,48,.9)}
+.ac-top .sp{flex:1}
+.ac-nav{display:flex;gap:6px;flex-wrap:wrap}
+.ac-nav button,.ac-btn{font:600 13px inherit;font-family:inherit;color:#e8e8ff;background:rgba(124,58,237,.18);border:1px solid rgba(140,120,255,.35);border-radius:10px;padding:8px 13px;cursor:pointer;min-height:38px}
+.ac-nav button.on,.ac-btn.pri{background:linear-gradient(135deg,#7c3aed,#0891b2);border-color:transparent;color:#fff}
+.ac-btn.bad{background:rgba(251,113,133,.18);border-color:#fb7185;color:#fecdd3}
+.ac-btn:disabled{opacity:.5;cursor:not-allowed}
+.ac-btn:focus-visible,.ac-nav button:focus-visible,.ac-in:focus-visible{outline:2px solid #22d3ee;outline-offset:2px}
+.ac-main{flex:1;overflow:auto;padding:16px;max-width:1100px;width:100%;margin-inline:auto}
+.ac-card{background:rgba(18,16,48,.7);border:1px solid rgba(140,120,255,.25);border-radius:14px;padding:14px;margin-block-end:12px}
+.ac-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.ac-in{width:100%;font:inherit;color:#fff;background:#0d0d2b;border:1px solid rgba(140,120,255,.35);border-radius:10px;padding:10px;margin-block:4px 10px}
+textarea.ac-in{min-height:110px;resize:vertical}
+label.ac-l{font-size:13px;color:#9aa0c8;display:block}
+.ac-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.ac-muted{color:#8a8fb5;font-size:13px}
+.ac-pill{display:inline-block;font-size:12px;padding:2px 10px;border-radius:99px;background:rgba(34,211,238,.15);border:1px solid rgba(34,211,238,.4)}
+.ac-pill.warn{background:rgba(251,191,36,.15);border-color:#fbbf24}.ac-pill.ok{background:rgba(52,211,153,.15);border-color:#34d399}.ac-pill.bad{background:rgba(251,113,133,.15);border-color:#fb7185}
+.ac-toast{position:fixed;inset-block-start:14px;inset-inline:0;margin-inline:auto;width:max-content;max-width:90vw;z-index:200;padding:10px 18px;border-radius:12px;background:#1e1b4b;border:1px solid #7c3aed}
+.ac-toast.err{border-color:#fb7185;background:#3b0d1a}
+.ac-auth{max-width:420px;margin:24px auto}
+.ac-chat{display:flex;flex-direction:column;height:calc(100vh - 170px);min-height:320px}
+.ac-msgs{flex:1;overflow:auto;display:flex;flex-direction:column;gap:8px;padding:6px}
+.ac-msg{display:flex;gap:8px;align-items:flex-start}.ac-msg .b{background:rgba(124,58,237,.18);border-radius:12px;padding:8px 12px;max-width:80%;overflow-wrap:anywhere;white-space:pre-wrap}
+.ac-msg.pin .b{border:1px solid #fbbf24}.ac-msg.me .b{background:rgba(8,145,178,.25)}
+.ac-lb{display:flex;align-items:center;gap:10px;padding:10px;border-radius:12px;margin-block-end:6px;background:rgba(18,16,48,.7);border:1px solid rgba(140,120,255,.2)}
+.ac-lb.r1{border-color:#fbbf24;background:rgba(251,191,36,.12)}.ac-lb.r2{border-color:#cbd5e1;background:rgba(203,213,225,.1)}.ac-lb.r3{border-color:#f59e0b;background:rgba(180,83,9,.15)}
+.ac-lb .rk{font:700 20px var(--font-mono,monospace);width:36px;text-align:center}
+.ac-bar{height:10px;border-radius:6px;background:rgba(140,120,255,.2);overflow:hidden}.ac-bar i{display:block;height:100%;background:linear-gradient(90deg,#22d3ee,#7c3aed)}
+.ac-bell{position:relative}.ac-bell b{position:absolute;inset-block-start:-6px;inset-inline-end:-6px;background:#f43f8e;border-radius:99px;font-size:11px;padding:1px 6px}
+.ac-opt{display:flex;gap:8px;align-items:center;padding:6px 0}
+.ac-opt input{width:20px;height:20px}
+.ac-tabs{display:flex;gap:6px;margin-block-end:12px;flex-wrap:wrap}
+@media(max-width:640px){.ac-main{padding:10px}.ac-nav button{padding:7px 10px;font-size:12px}}
